@@ -1,3 +1,12 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://clover-leaf.github.io'
 languageCode = 'en-us'
-title = 'Sea wind'
+title = 'The blog of Clover-leaf'
+
+[params]
+  author = "Clover-leaf"
+  description = "A blog about my learning path"
+
+  [[params.social]]
+    icon = "github"
+    name = "GitHub"
+    url = "https://github.com/clover-leaf"

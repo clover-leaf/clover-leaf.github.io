@@ -1,5 +1,53 @@
 baseURL: "https://clover-leaf.github.io"
 languageCode: "en-us"
 title: "The blog of Clover-leaf"
-theme: "PaperMod"
-publishDir: "docs"
+theme        : "hello-friend-ng"
+paginate     : 10
+publishDir : "docs"
+
+[params]
+  dateform        : "Mar 19, 2017"
+  dateformShort   : "Mar 19"
+  dateformNum     : "2017-03-19"
+  dateformNumTime : "2017-03-19 15:04"
+
+  # Subtitle for home
+  homeSubtitle : "This is an example to show how cool Hugo and GitHub pages are together"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts : false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons : true
+
+  # Metadata mostly used in document's head
+  description : "My new homepage or blog"
+  keywords : "homepage, blog"
+  images : [""]
+
+[taxonomies]
+    category : "blog"
+    tag      : "tags"
+    series   : "series"
+
+[languages]
+  [languages.en]
+    title : "clover-leaf-Hugo-Demo"
+    subtitle : "A simple theme for Hugo"
+    keywords : ""
+    copyright : '<a href:"https://creativecommons.org/licenses/by-nc/4.0/" target:"_blank" rel:"noopener">CC BY-NC 4.0</a>'
+    readOtherPosts : "Read other posts"
+
+    [languages.en.params.logo]
+      logoText : "clover-leaf"
+      logoHomeLink : ""
+    # or
+    #
+    # path : "/img/your-example-logo.svg"
+    # alt : "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier : "blog"
+    name       : "Blog"
+    url        : "posts"
